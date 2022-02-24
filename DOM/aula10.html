@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10</title>
+    <style>
+        #area{
+            font: normal 20pt Arial;
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        #area2{
+            font: normal 20pt Arial;
+            background-color: aqua;
+            width: 300px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja ...
+    </div>
+    <div id="area2">
+        interaja também !!
+    </div>
+    <script>
+        
+        var area = window.document.getElementById("area")
+
+        var area2 = window.document.getElementById("area2")
+
+        area2.addEventListener("click", clicar)
+        area2.addEventListener("onmouseenter", entrar)
+        area2.addEventListener("onmouseout", sair)
+        
+
+        function clicar() {
+            area.innerText = "Clicou !!"
+            area.style.background = "red"
+            area2.innerText = "Clicou !!"
+            area2.style.background = "red"
+        }
+        function entrar(){
+            area.innerText = "Entrou!!"
+            area2.innerText = "Entrou!!"
+        }
+        function sair(){
+            area.innerText = "Saiu!!"
+            area.style.background = "blue"
+            area2.innerText = "Saiu!!"
+            area2.style.background = "blue"
+        }
+    </script>
+</body>
+</html>

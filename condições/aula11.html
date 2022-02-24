@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocidade carro</title>
+</head>
+<body>
+    <h1>Velocímetro</h1>
+    Velocidade do carro: <input type="number" name="vel" id="vel">km/h
+    <button onclick="calcular()">Calcular</button> 
+    <div id="res"></div>  
+    
+    <script>
+        function calcular(){
+            var textvel = window.document.getElementById("vel")
+            var res = window.document.getElementById("res")
+            var vel = Number(textvel.value)
+
+            res.innerHTML = `<p>sua velocidade é de <strong>${vel}km/h</strong></p>`
+
+            if(vel>60){
+                res.innerHTML += "<p>Você será multada gata<p/>"
+            }else{
+                res.innerHTML += "<p>Continua assim que o radar não pega</p>"
+            }
+
+        }
+    </script>
+</body>
+</html>

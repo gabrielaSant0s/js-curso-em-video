@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(24, 6, 34);
+    font: 20px arial;
+    color: azure;
+}
+
+header{
+    text-align: center;
+}
+
+section {
+    width: 500px;
+    height: 300px;
+    background-color: beige;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0, 0, 0.363);
+}
+
+#texto-hora{
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#imagem{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.imagem2{
+    width: 200px;
+    height: 200px;
+}
+
+footer{
+    text-align: center;
+}

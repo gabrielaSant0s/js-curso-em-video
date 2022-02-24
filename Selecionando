@@ -1,0 +1,34 @@
+============= selecionar elementos pelo DOM =================
+
+window = navegador
+document = documento html
+window.document.getElementsByClassName() = faz acessar o elemento 
+
+Por marca (tag) = 
+getElementsByTagName("aqui coloca a tag")[o numero de elemento igual lista]
+
+Por id = getElementsById()
+por nome = getElementsByName()
+por classe = getElementsByClassName()
+
+por seletor =
+querySelector()
+querySelectorAll() so q usa com a notacao do css entao se temos uma div com id "oi"
+fica : 
+querySelector("div#oi")
+
+========== Ano e horas atuais ===========
+var agora = new Date()
+var horas = agora.getHours() tem as variações de para data e dias e etc
+
+========= condições multiplas ==========
+
+só funciona com inteiros e caracteres
+switch (condiçao){
+    case1 :
+    break
+    case2:
+    break
+    default:
+    break
+}
